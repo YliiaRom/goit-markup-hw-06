@@ -19,6 +19,7 @@
       rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
+
   </head>
   <body>
     <!-- ................ШАПКА............. -->
@@ -54,7 +55,82 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
 
+        </button>
+
+      </div>
+
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-conteiner">
+          <button class="btn-mobile-menu-close" type="button" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-list">
+            <ul class="mobile-nav-list">
+              <li class="mobile-item">
+                <a class="mobile-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-item">
+                <a class="mobile-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-item">
+                <a class="mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contact-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="icon-menu-list">
+            <li class="icon-menu-item">
+              <a href="" class="icon-link">
+                <svg class="icon-fill" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-menu-item">
+              <a href="" class="icon-link">
+                <svg class="icon-fill" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-menu-item">
+              <a href="" class="icon-link">
+                <svg class="icon-fill" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-menu-item">
+              <a href="" class="icon-link">
+                <svg class="icon-fill" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header> 
     <!-- .........................секция 1-top........... -->
@@ -135,10 +211,12 @@
 
 
             <li class="team-card-item">
-              <img
-                src="./images/mark-guerrero.jpg"
-                alt="Mark Guerrero face"
-                width="264">
+            
+                <img srcset="./images/our-team/mark-guererro-mob-@1x.jpg 1x, ./images/our-team/mark-guererro-mobile-@2x.jpg 2x"
+                  src="./images/mark-guerrero.jpg"
+                  alt="Mark Guerrero face"
+                  width="264">
+            
               <div class="conteiner-card-user">
                   <h3 class="team-card-name title">Mark Guerrero</h3>
                   <p class="team-card-prof">Product Designer</p>
@@ -179,7 +257,11 @@
 
 
             <li class="team-card-item">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford face" width="264">
+              <picture>
+                <source srcset="./images/our-team/tom-ford-mob-@1x.jpg 1x, ./images/our-team/tom-ford-mob-@2x.jpg 2x">
+                <img src="./images/tom-ford.jpg" alt="Tom Ford face" width="264">
+              </picture>
+
               <div class="conteiner-card-user">
                 <h3 class="team-card-name title">Tom Ford</h3>
                 <p class="team-card-prof">Frontend Developer</p>
@@ -217,10 +299,14 @@
               </div>
             </li>
             <li class="team-card-item">
-              <img
-                src="./images/camila-garcia.jpg"
-                alt="Camila Garcia face"
-                width="264">
+              <picture>
+                <source srcset="./images/our-team/camila-garcia-mob@1x.jpg 1x, ./images/our-team/camila-garcia-mob@2x..jpg 2x">
+                <img
+                  src="./images/camila-garcia.jpg"
+                  alt="Camila Garcia face"
+                  width="264">
+              </picture>
+
                 <div class="conteiner-card-user">
 
                   <h3 class="team-card-name title">Camila Garcia</h3>
@@ -259,10 +345,14 @@
                 </div>
             </li>
             <li class="team-card-item">
-              <img
-                src="./images/daniel-wilson.jpg"
-                alt="Daniel Wilson fase"
-                width="264">
+              <picture>
+                <source srcset="./images/our-team/daniel-wilson-mobile-@1x.jpg 1x, ./images/our-team/daniel-wilson-mobile-@2x.jpg 2x">
+                <img
+                  src="./images/daniel-wilson.jpg"
+                  alt="Daniel Wilson fase"
+                  width="264">
+              </picture>
+
                 <div class="conteiner-card-user">
                   <h3 class="team-card-name title">Daniel Wilson</h3>
                   <p class="team-card-prof">UI Designer</p>
@@ -311,7 +401,10 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-picture">
-                <img src="./images/banking-app.jpg" alt="application layout" width="360">
+                <picture>
+                  <source srcset="./images/portfolio/banking-app@1x.jpg 1x, ./images/portfolio/banking-app@2x.jpg 2x">
+                  <img src="./images/banking-app.jpg" alt="application layout" width="360">
+                </picture>
                 <p class="picture-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -325,9 +418,12 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-picture">
-                <img
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless payment" width="360">
+                <picture>
+                  <source srcset="./images/portfolio/cashes-paiment@1x.jpg 1x, ./images/portfolio/cashes-paiment@2x.jpg 2x">
+                  <img
+                    src="./images/cashless-payment.jpg"
+                    alt="Cashless payment" width="360">
+                </picture>
                   <p class="picture-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                   </p>
@@ -340,11 +436,15 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-picture">
+                <picture>
+                  <source srcset="./images/portfolio/meditation-app@1x.jpg 1x, ./images/portfolio/meditation-app@2x.jpg 2x">
+                  <img
+                    src="./images/meditation-app.jpg"
+                    alt="Meditation app"
+                    width="360">
 
-                <img
-                  src="./images/meditation-app.jpg"
-                  alt="Meditation app"
-                  width="360">
+                </picture>
+
                   <p class="picture-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                   </p>
@@ -357,11 +457,15 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-picture">
+                <picture>
+                  <source srcset="./images/portfolio/taxi-service@1x.jpg 1x, ./images/portfolio/taxi-service@2x.jpg 2x">
+                  <img
+                    src="./images/taxi-service.jpg"
+                    alt="Taxi service"
+                    width="360">
 
-                <img
-                  src="./images/taxi-service.jpg"
-                  alt="Taxi service"
-                  width="360">
+                </picture>
+
                 <p class="picture-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -374,6 +478,9 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-picture">
+                <picture>
+                  <source srcset="./images/portfolio/screen-illustration@1x.jpg 1x, ./images/portfolio/screen-illustration@2x.jpg 2x">
+                </picture>
                 <img
                   src="./images/screen-illustrations.jpg"
                   alt="screen illustrations"
@@ -390,10 +497,15 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-picture">
-                <img
-                  src="./images/online-courses.jpg"
-                  alt="Online courses"
-                  width="360">
+                <picture>
+                  <source srcset="./images/portfolio/online-courses@1x.jpg 1x, ./images/portfolio/online-courses@2x.jpg 2x">
+
+                  <img
+                    src="./images/online-courses.jpg"
+                    alt="Online courses"
+                    width="360">
+
+                </picture>
                 <p class="picture-text">
                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -477,7 +589,6 @@
 
             <button class="form-subskripe-btn" type="submit">
               Subscribe
-               
                 <svg class="subscribe-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
@@ -508,69 +619,75 @@
         </p>
 <!-- ---------/form/------------- -->
         <form class="contacts-form">
-          
-           <div class="contacts-form-wrapper">
-            <label class="contacts-form-label" for="user-name">Name</label>
-            <div class="contacts-form-input-wrapper">
-              <input 
-              class="contacts-form-input"
-              type="text"
-              id="user-name"
-              name="user-name"
-              >
 
-              <svg class="contacts-form-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-            </div>
-            </div>
+          <div class="main-conteiner-contacts">
 
-
-            <div class="contacts-form-wrapper">
-              <label class="contacts-form-label" for="user-name">Phone</label>
+            
+             <div class="contacts-form-wrapper">
+              <label class="contacts-form-label" for="user-name">Name</label>
               <div class="contacts-form-input-wrapper">
                 <input 
                 class="contacts-form-input"
-                type="tel"
-                id="user-tel"
-                name="user-tel"
+                type="text"
+                id="user-name"
+                name="user-name"
+                >
+  
+                <svg class="contacts-form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+              </div>
+  
+  
+              <div class="contacts-form-wrapper">
+                <label class="contacts-form-label" for="user-name">Phone</label>
+                <div class="contacts-form-input-wrapper">
+                  <input 
+                  class="contacts-form-input"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  required
+                  >
+    
+                  <svg class="contacts-form-input-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div> 
+             </div>
+  
+  
+             <div class="contacts-form-wrapper">
+              <label class="contacts-form-label" for="user-email">Email</label>
+              <div class="contacts-form-input-wrapper">
+                <input 
+                class="contacts-form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
                 required
                 >
   
                 <svg class="contacts-form-input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
+                  <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div> 
            </div>
-
-
-           <div class="contacts-form-wrapper">
-            <label class="contacts-form-label" for="user-email">Email</label>
-            <div class="contacts-form-input-wrapper">
-              <input 
-              class="contacts-form-input"
-              type="email"
-              id="user-email"
-              name="user-email"
-              required
-              >
-
-              <svg class="contacts-form-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div> 
+  
+  
+  
+           <div class="contacts-form-wrapper-comment">
+            <label class="contacts-form-label" for="user-comment">Comment</label>
+              <textarea class="contacts-form-comment" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+             
          </div>
 
-
-
-         <div class="contacts-form-wrapper-comment">
-          <label class="contacts-form-label" for="user-comment">Comment</label>
-            <textarea class="contacts-form-comment" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-           
-       </div>
+          </div>
 
 
        <div class="contacts-form-wrapper-checkbox">
+        
         <input 
         class="contacts-form-checkbox visually-hidden"
         type="checkbox"
@@ -580,12 +697,16 @@
         >
         <label class="contacts-form-label-checkbox" for="user-privacy"> 
           <span class="contacts-form-label-custom">
+
             <svg class="checkbox-custom-icon" width="10" height="8">
               <use href="./images/icons.svg#icon-ok"></use>
             </svg>
+
           </span>
-          I accept the terms and conditions of the 
-          <a class="checkbox-link-policy" href="">Privacy Policy</a>
+          <span class="conteiner-checkbox-span">
+            I accept the terms and conditions of the 
+            <a class="checkbox-link-policy" href="">Privacy Policy</a>
+          </span>
         </label>
       </div>
 
@@ -600,5 +721,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
